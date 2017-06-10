@@ -1,1 +1,1 @@
-aliyun_mns PHP sdk && ..
+aliyun_mns PHP sdk && ..短信服务
