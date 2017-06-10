@@ -1,0 +1,32 @@
+{
+    "name": "xuying/aliyun_mns",
+    "description": "aliyun_mns PHP sdk && ..",
+    "type": "project",
+    "keywords": [
+        "aliyun",
+        "MNS"
+    ],
+    "homepage": "https://github.com/234146326/aliyun_mns/",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "XUYING",
+            "email": "q234146326@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload":
+    {
+
+        "psr-4": {
+            "think\\mns\\": "/"
+        },
+        "files": [
+            "/index.php"
+        ]
+
+    }
+}
