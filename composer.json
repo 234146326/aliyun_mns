@@ -22,10 +22,10 @@
     {
 
         "psr-4": {
-            "think\\mns\\": "/"
+            "think\\mns\\": "src/"
         },
         "files": [
-            "/index.php"
+            "src/index.php"
         ]
 
     }

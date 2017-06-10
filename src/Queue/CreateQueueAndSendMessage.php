@@ -22,7 +22,7 @@ class CreateQueueAndSendMessage
 
     public function run()
     {
-        $queueName = "CreateQueueAndSendMessageExample";
+        $queueName = (array)\think\Config::get('mns')['topicName'];
 
         $this->client = new Client($this->endPoint, $this->accessId, $this->accessKey);
 
