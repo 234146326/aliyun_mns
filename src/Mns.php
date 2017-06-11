@@ -14,6 +14,7 @@ use AliyunMNS\Requests\PublishMessageRequest;
 
 /**
  * Class Mns
+ * @package think\mns
  */
 class Mns
 {
@@ -22,15 +23,17 @@ class Mns
      */
     protected $config = [
         'seKey'    => 'https://github.com/234146326/aliyun_mns',
-        'accessId'    => 'LTAI406blikaopCG',
-        'accessKey'    => 'HChBDwZ9wRm9ox3z6l08nt9SPHI5Ec',
-        'endPoint'    => 'http://1779391360551898.mns.cn-hangzhou.aliyuncs.com/',
-        'topicName'    => 'first',
+        'accessId'    => '必填',
+        'accessKey'    => '必填',
+        'endPoint'    => '必填',
+        'topicName'    => '必填',
         "SMS" =>[
             "dev" => ["SMSSignName","SMSTemplateCode"],
             "master" => ["SMSSignName1","SMSTemplateCode1"],
         ]
     ];
+
+    protected $client;
 
     /**
      * Mns constructor.
@@ -77,6 +80,10 @@ class Mns
         return isset($this->config[$name]);
     }
 
+    /**
+     * @param string $smsName
+     * @param array $moblie
+     */
     public function run($smsName="",$moblie=[])
     {
         /**
@@ -86,8 +93,8 @@ class Mns
         /**
          * Step 2. 获取主题引用
          */
-        $topicName = $this->topicName;
-        $topic = $this->client->getTopicRef($topicName);
+        $topic_name = $this->topicName;
+        $topic = $this->client->getTopicRef($topic_name);
         /**
          * Step 3. 生成SMS消息属性
          */
