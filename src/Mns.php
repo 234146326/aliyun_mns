@@ -124,17 +124,11 @@ class Mns
         try
         {
             $res = $topic->publishMessage($request);
-            echo $res->isSucceed();
-            echo "\n";
-            echo $res->getMessageId();
-            echo "\n";
+            return $res;
         }
         catch (MnsException $e)
         {
-            echo '错误';
-            echo "\n";
-            echo $e;
-            echo "\n";
+          return $e;
         }
     }
 }
