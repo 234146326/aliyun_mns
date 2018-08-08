@@ -19,7 +19,6 @@
     },
     "autoload":
     {
-
         "psr-4": {
             "think\\mns\\": "src/"
         },
@@ -27,5 +26,8 @@
             "src/index.php"
         ]
 
+    },
+    "extra": {
+        "mns-path": "mns"
     }
 }
