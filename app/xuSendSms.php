@@ -11,6 +11,7 @@ namespace aliyun_mns\app;
 use aliyun_mns\SignatureHelper;
 
 /**
+ *
  * Class xuSendSms
  * @package aliyun_mns\app
  */
