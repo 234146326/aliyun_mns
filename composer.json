@@ -1,7 +1,6 @@
 {
     "name": "xuying/aliyun_mns",
     "description": "aliyun_mns PHP sdk && ..",
-    "type": "project",
     "keywords": [
         "aliyun",
         "MNS"
